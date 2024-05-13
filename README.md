@@ -1,41 +1,38 @@
-# Introduction
-## a. Application Overview
-The application is a simple room reservation system implemented in Python. It allows users to select a room type, arrival date, duration of stay, and whether they want to include breakfast. The program calculates the total price for the stay based on the selected options and displays the reservation details.
+# Hotel Booking System Report
 
-## b. How to Run the Program
-To run the program, you need to execute the Python script `room_reservation.py` in your Python environment. Ensure you have the necessary dependencies installed, particularly Python 3.x.
+## 1. Introduction
 
-## c. How to Use the Program
-1. Run the program as described above.
-2. Follow the prompts to select the room type, enter the arrival date, specify the duration of stay, and choose whether to include breakfast.
-3. The program will calculate the total price for the stay and display the reservation details.
+### a. Application Overview:
+The Hotel Booking System is a Python program designed to facilitate hotel room bookings. It allows users to input their desired arrival and departure dates, select whether they want breakfast during their stay, and specify the number of rooms they wish to book.
 
-# Body/Analysis
-## a. Functional Requirements Coverage
-- **Room Selection**: Users can select a room type from available options.
-- **Arrival Date**: Users can input the arrival date in the format YYYY-MM-DD.
-- **Stay Duration**: Users specify the number of days for their stay.
-- **Breakfast Inclusion**: Users can choose whether to include breakfast.
-- **Total Price Calculation**: The program calculates the total price based on room type, breakfast choice, and stay duration.
-- **Concurrency**: Threads are used to handle multiple reservation processes concurrently.
-- **Factory Method Pattern**: The `StayFactory` class implements the Factory Method pattern to create instances of the `Stay` class.
+### b. Running the Program:
+To run the program, you need to have Python installed on your system. Simply execute the Python script named `hotel_booking_system.py` using your preferred Python interpreter.
 
-# Results and Summary
-## a. Results
-- **Challenges Faced**: Ensuring thread safety and proper synchronization when handling multiple reservation processes concurrently was a challenge. Testing concurrency and ensuring accurate total price calculations also required careful consideration.
+### c. Using the Program:
+1. Upon running the program, users will be prompted to enter their arrival date, departure date, whether they want breakfast, and the number of rooms they wish to book.
+2. After providing the necessary inputs, the program will calculate the total cost of the booking and display the booking details along with the total cost.
 
-## b. Conclusions
-- **Scalability**: The program demonstrates the capability to handle multiple reservation requests simultaneously, making it suitable for a real-world scenario where multiple users may interact with the system concurrently.
-- **Robustness**: Despite the challenges, the program maintains robustness through proper encapsulation, error handling, and adherence to best practices such as the Factory Method pattern.
+## 2. Body/Analysis
 
-## c. Future Prospects
-- **Extension Possibilities**: The application could be extended to include features such as user authentication, database integration for persistent data storage, and a graphical user interface for a more user-friendly experience. Additionally, enhancing error handling and adding more comprehensive unit tests would further improve the reliability and maintainability of the program.
+### a. Functional Requirements Coverage:
+- **User Input Handling**: The program effectively handles user input for arrival and departure dates, breakfast preference, and number of rooms.
+- **Booking Cost Calculation**: It accurately calculates the total cost of the booking based on the provided inputs.
+- **Booking Details Display**: The program displays the booking details including arrival date, departure date, breakfast option, number of rooms booked, and total cost.
 
-# Conclusion
-The room reservation system implemented in Python provides a solid foundation for managing hotel bookings. Through effective concurrency handling and adherence to design patterns, the program achieves its objectives of providing a flexible and reliable reservation solution. With future enhancements and refinements, the application holds promise for broader use in the hospitality industry. 
+## 3. Results and Summary
 
-# Program Result
-The program successfully handles room reservations by allowing users to specify their preferences and calculating the total price accordingly. It demonstrates concurrency handling through threading and encapsulation through the Factory Method pattern.
+### a. Results:
+- The program successfully meets the functional requirements by accurately processing user input and providing the necessary booking details.
+- Challenges during implementation included handling date formatting errors and ensuring robust error handling for user inputs.
 
-# Future Prospects
-The program can be extended to include additional features such as user authentication, database integration, and a graphical user interface. Further improvements in error handling and test coverage would enhance its reliability and scalability. Additionally, integration with external services for payment processing and email notifications could enrich the user experience.
+### b. Conclusions:
+- The Hotel Booking System effectively fulfills its purpose of simplifying the booking process for hotel rooms.
+- It demonstrates the successful implementation of object-oriented programming principles and design patterns to achieve modularity and flexibility in the codebase.
+
+### c. Future Prospects:
+- The program can be extended to include additional features such as user authentication, room availability checking, and payment processing.
+- Integration with external APIs for real-time availability and pricing information could enhance the functionality of the system.
+
+## 4. Optional: Resources, References
+- The Python documentation: [https://docs.python.org/](https://docs.python.org/)
+- Stack Overflow for troubleshooting and code examples: [https://stackoverflow.com/](https://stackoverflow.com/)
